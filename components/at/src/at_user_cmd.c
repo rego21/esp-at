@@ -341,7 +341,7 @@ static uint8_t at_setup_cmd_userota(uint8_t para_num)
         if (had_received_len == length) {
             esp_at_port_exit_specific();
 
-            snprintf((char *)buffer, TEMP_BUFFER_SIZE, "\r\nRecv %d bytes\r\n", length);
+            snprintf((char *)buffer, TEMP_BUFFER_SIZE, "\r\nRecv thank you %d bytes\r\n", length);
             esp_at_port_write_data(buffer, strlen((char *)buffer));
 
             had_received_len = esp_at_port_get_data_length();
