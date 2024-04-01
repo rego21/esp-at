@@ -27,7 +27,7 @@
 static QueueHandle_t s_at_uart_queue = NULL;
 
 // global variables
-uint8_t g_at_cmd_port = UART_NUM_1;
+uint8_t g_at_cmd_port = UART_NUM_0;
 at_uart_port_pins_t g_uart_port_pin;
 
 static int32_t at_uart_write_data(uint8_t *data, int32_t len)
